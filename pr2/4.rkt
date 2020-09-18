@@ -1,0 +1,11 @@
+(display "Введите входные данные:")(newline)
+(display "Величина первого сопротивления (Ом) = ")(define n1 (read))
+(display "Величина первого сопротивления (Ом) = ")(define n2 (read))
+(display "Тип соединения: 1 - последовательное, 2 - паралленльное: ")(define type (read))
+(define ans (if 
+	      (equal? "1" type)
+	      (+ n1 n2)
+	      (truncate (/ (* n1 n2) (+ n1 n2)))
+	   )
+)
+(display "Сопротивление цепи: ")(display ans)(display " Ом")
