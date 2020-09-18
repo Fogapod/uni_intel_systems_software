@@ -1,0 +1,5 @@
+(define PI 3.14159216)
+(display "Вычисление объёма цилиндра")(newline)
+(display "Введите радиус основания: ")(define r (read))
+(display "Введите высоту: ")(define h (read))
+(display "V = ")(display (* h (* PI (* r r))))

@@ -1,0 +1,5 @@
+(display "Введите входные данные:")(newline)
+(display "Расстояние до дачи: ")(define distance (read))
+(display "Потребление бенина за 100 км: ")(define consumption100 (read))
+(display "Стоимость бензина (л): ")(define price (read))
+(display "Стоимость поездки: ")(display (* (/ consumption100 100) (* 2 distance)))

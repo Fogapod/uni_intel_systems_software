@@ -1,0 +1,6 @@
+(display "Вычисление стоимости покупки")(newline)
+(display "Введите цену тетради: ")(define ct (read))
+(display "Введите количество тетрадей: ")(define kt (read))
+(display "Введите цену карандаша: ")(define ck (read))
+(display "Введите количество карандашей: ")(define kk (read))
+(display "Стоимость = ")(display (+ (* ct kt) (* ck kk)))
